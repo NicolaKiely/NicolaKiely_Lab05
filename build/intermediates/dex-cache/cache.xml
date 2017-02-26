@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_9beba2f7902160e0815cb413b8c002a90dfbaaae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbf36c9ff766726e59c16df98256d4cc86ca6205">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9241fd306ae26e987706986391097f3b39ae6dd2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_8a3832b02408cd65e2bc3f1d77d1e4d5a9d842a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_3b4e26810a8f891cd02171c82068d8f982f303ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c83fbde55c05bc186002d7ce3570d619c3d6ee1f">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-25.1.0_e65014639c58705f21f68a5645a20cb8172c66c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_e36b3edd268d8f8a40e6f5708c7badc6a5309213/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.noisepages.nettoyeur/midi/1.0.0-rc1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a35b73ff5c4ab6af57b21c03b9b3aa234d816a7f">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.noisepages.nettoyeur-midi-1.0.0-rc1_094e65ad2e2741c88d5684273f4862e6f1aea48b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/org.puredata.android/pd-core/1.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="79334435f653b507dd64f120572d49d9620bbf49">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/org.puredata.android-pd-core-1.0.2_3296f55fe2c92d491a329433da82fc9f8652f853/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_cd70d2ae36fbf8b30f9ba7d9bb311f2a40147f67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_3c64bcbd6844d51a1f377723691c0d3dd6ad1765/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_62666281eee81c8f45fb45326be53dbdfb6b84c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_da04e9995d9ed20c694bfbb8d22b6248af75ff53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_5c07b87bc84f8e140a96b7b17154b05908b37ba4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="21194b558219bf68da7a5e06d8a9fcb4d570772e">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_676bac8e6dfc838eb5e93805fdc2bd34b0b10bb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab05/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_8f4926811bc0e3fac55e33fbc4b0b472bda88389/classes.dex" />
+    </item>
+
+</items>
