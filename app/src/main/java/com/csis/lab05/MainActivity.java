@@ -3,24 +3,13 @@ package com.csis.lab05; //package we're in
 
 //android imports
 
-import android.Manifest;
-import android.app.Activity;
-import android.content.Context;
 import android.content.pm.ActivityInfo;
-import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.CompoundButton;
 import android.widget.onOffSwitch;
 import android.widget.setOnCheckedChangeListener;
@@ -38,20 +27,30 @@ import java.io.File;
 import java.io.IOException;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements SensorEventListener{
 
+
+    TextView accelX;
+    TextView accelY;
+    TextView accelZ;
     private PdUiDispatcher dispatcher; //must declare this to use later, used to receive data from sendEvents
 
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);//Mandatory
         setContentView(R.layout.activity_main);//Mandatory
+        accelX = (TextView) findViewById(R.id.AccelXValue);
+        accelY = (TextView) findViewById(R.id.AccelYValue);
+        accelZ = (TextView) findViewById(R.id.AccelZValue);
 
 
-        switch (switch) = (switch) findViewById(R.id.switch1);//declared the switch here pointing to id onOffSwitch
+
+
+        switch (switch) = (switch) findViewById(R.id.AccelXValue);//declared the switch here pointing to id onOffSwitch
         //Check to see if switch1 value changes
 
 
@@ -144,4 +143,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
 }
