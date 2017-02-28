@@ -21,6 +21,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.CompoundButton;
+import android.widget.onOffSwitch;
+import android.widget.setOnCheckedChangeListener;
+
 
 //PURE DATA IMPORTS
 
@@ -40,6 +44,36 @@ public class MainActivity extends AppCompatActivity {
 
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);//Mandatory
+        setContentView(R.layout.activity_main);//Mandatory
+
+
+        switch (switch) = (switch) findViewById(R.id.switch1);//declared the switch here pointing to id onOffSwitch
+        //Check to see if switch1 value changes
+
+
+        onOffButton.setOnCheckedChangeListener (new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                float val = (isChecked) ?  1.0f : 0.0f; // value = (get value of isChecked, if true val = 1.0f, if false val = 0.0f)
+                sendFloatPD("onOff", val); //send value to patch, receiveEvent names onOff
+
+            }
+        });
+
+        try { // try the code below, catch errors if things go wrong
+            initPD(); //method is below to start PD
+            loadPDPatch("synth.pd"); // This is the name of the patch in the zip
+        } catch (IOException e) {
+            e.printStackTrace(); // print error if init or load patch fails.
+            finish(); // end program
+        }
+
+    }
+
 
 
     @Override
@@ -64,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         PdAudio.startAudio(this);
-        //mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
 
@@ -72,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         PdAudio.stopAudio();
-       // mSensorManager.unregisterListener(this);
+       mSensorManager.unregisterListener(this);
     }
 
     //METHOD TO SEND FLOAT TO PUREDATA PATCH
