@@ -11,8 +11,8 @@ import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CompoundButton;
-import android.widget.onOffSwitch;
-import android.widget.setOnCheckedChangeListener;
+//import android.widget.onOffSwitch;
+//import android.widget.setOnCheckedChangeListener;
 
 
 //PURE DATA IMPORTS
@@ -90,6 +90,13 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
             finish(); // end program
         }
 
+       mSensorManager = (SensorManager)
+               getSystemService(Context.Sensor_Service);
+        mAccelerometer =
+                mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mSensorManager.registerListener(this, mAccelerometer,
+                SensorManager.SENSOR_DELAY_NORMAL);
+
     }
 
 
@@ -145,6 +152,21 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
     @Override
     public void onSensorChanged(SensorEvent event) {
+        Sensor mySensor = sensorEvent.sensor;
+        if (mySensor.getType() == Sensor.TYPE_ACCELEROMETER)
+        {
+            float x = sensorEvent.values[0];
+            float y = sensorEvent.values[1];
+            float z = sensorEvent.values[2];
+
+            sendFloatPD("accelX", x);
+            accelX.setText(String.valueOf(x));
+            sendFloatPD("accelY", y);
+            accelY.setText(String.valueOf(y));
+            sendFloatPD("accelZ", z);
+            accelZ.setText(String.valueOf(z));
+
+        }
 
     }
 
