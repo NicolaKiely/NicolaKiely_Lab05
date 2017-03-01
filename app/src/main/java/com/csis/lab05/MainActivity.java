@@ -11,8 +11,8 @@ import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CompoundButton;
-//import android.widget.onOffSwitch;
-//import android.widget.setOnCheckedChangeListener;
+import android.widget.onOffSwitch;
+import android.widget.setOnCheckedChangeListener;
 
 
 //PURE DATA IMPORTS
@@ -30,31 +30,31 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity  implements SensorEventListener{
 
 
-    TextView accelX;
-    TextView accelY;
-    TextView accelZ;
+
     private PdUiDispatcher dispatcher; //must declare this to use later, used to receive data from sendEvents
 
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
-
+    TextView accelX;
+    TextView accelY;
+    TextView accelZ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);//Mandatory
         setContentView(R.layout.activity_main);//Mandatory
-        accelX = (TextView) findViewById(R.id.AccelXValue);
+        accelX = (TextView) findViewById(R.id.Switch1);
         accelY = (TextView) findViewById(R.id.AccelYValue);
         accelZ = (TextView) findViewById(R.id.AccelZValue);
 
 
 
 
-        switch (switch) = (switch) findViewById(R.id.AccelXValue);//declared the switch here pointing to id onOffSwitch
+        switch (switch) = (switch) findViewById(R.id.Switch1);//declared the switch here pointing to id onOffSwitch
         //Check to see if switch1 value changes
 
 
-        onOffButton.setOnCheckedChangeListener (new CompoundButton.OnCheckedChangeListener() {
+        onOffSwitch.setOnCheckedChangeListener (new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 float val = (isChecked) ?  1.0f : 0.0f; // value = (get value of isChecked, if true val = 1.0f, if false val = 0.0f)
@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
             }
         });
 
-        try { // try the code below, catch errors if things go wrong
+        try { //try the code below, catch errors if things go wrong
             initPD(); //method is below to start PD
-            loadPDPatch("synth.pd"); // This is the name of the patch in the zip
+            loadPDPatch("synth.zip"); // This is the name of the patch in the zip
         } catch (IOException e) {
             e.printStackTrace(); // print error if init or load patch fails.
             finish(); // end program
